@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["ie >= 11", "last 2 versions"]
+      }
+    }],
+    "react"
+  ],
+  "plugins": [
+    "babel-plugin-transform-class-properties",
+    "transform-object-rest-spread"
+  ]
+}
