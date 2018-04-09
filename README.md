@@ -2,6 +2,8 @@
 
 Starter project for React application using webpack 4
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" width="64">
+
 ## Contents
 
 1. Babel - ES6 to ES5 transpiling and JSX support.
