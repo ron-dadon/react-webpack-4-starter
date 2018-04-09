@@ -41,7 +41,7 @@ Wait for the modules installation to complete.
 
 You have 2 predefined scripts:
 
-1. Start - spin up the webpack dev server (default port 8888, can be changed in `webpack.config.js` under `devServer`)
+1. Start - spin up the webpack dev server (default port `8080`, can be changed in `webpack.config.js` under `devServer`)
 2. Build - create a production build in the `dist` folder
 
 To run the scripts use:
