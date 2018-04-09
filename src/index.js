@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Home from 'Components/Home/Home'
 
-const Index = () => (<h1>Index</h1>)
-
-ReactDOM.render(<Index />, document.getElementById('app'))
+ReactDOM.render(<Home />, document.getElementById('app'))

@@ -10,5 +10,21 @@
   "plugins": [
     "babel-plugin-transform-class-properties",
     "transform-object-rest-spread"
-  ]
+  ],
+  "env": {
+    "development": {
+      "sourceMap": "inline"
+    },
+    "production": {
+      "plugins": [
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
+    },
+    "test": {
+      "plugins": [
+        "add-module-exports"
+      ]
+    }
+  }
 }
