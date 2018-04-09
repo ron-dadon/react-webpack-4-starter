@@ -1,8 +1,11 @@
 # react-webpack-4-starter
 
-Starter project for React application using webpack 4
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" width="64">
+<img src="https://cdn-images-1.medium.com/max/1200/1*Wx82vEGrMfW4AdSLodZXgQ.png" width="64">
+<img src="https://cdn-images-1.medium.com/max/2000/1*XmHUL5DeySv_dGmvbPqdDQ.png" width="64">
+<img src="https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png" width="64">
+
+Starter project for React application using webpack 4
 
 ## Contents
 
