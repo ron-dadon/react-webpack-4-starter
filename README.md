@@ -11,7 +11,15 @@ Starter project for React application using webpack 4
 5. PropTypes library for React components prop types validation
 6. Redux & React Redux for state management
 7. Redux thunk middleware for better actions handling
-
+8. Predefined aliases:
+   There are 5 predefined aliases in `webpack.config.js` for shorter import statements:
+   `Components` - Alias for `/src/Components`
+   `Containers` - Alias for `/src/Containers`
+   `Actions` - Alias for `/src/Redux/Actions`
+   `Reducers` - Alias for `/src/Redux/Reducers`
+   `Utilities` - Alias for `/src/Utilities`
+9. Url Loader - image files (`jp(e)g, png, gif, svg`) will be Base64 encoded and inlined if their size is up to 16KB by default. You can change the limit in `webpack.config.js` or remove it.
+   
 ## Usage
 
 Clone the repository or download it as a zip.
