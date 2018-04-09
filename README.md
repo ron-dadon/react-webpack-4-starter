@@ -2,6 +2,8 @@
 
 <img src="https://cdn-images-1.medium.com/max/1468/1*kt9otqHk14BZIMNruiG0BA.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/1*Wx82vEGrMfW4AdSLodZXgQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/2000/1*XmHUL5DeySv_dGmvbPqdDQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png" height="64">
 
+Starter project for React application using webpack 4
+
 ## Contents
 
 1. Babel - ES6 to ES5 transpiling and JSX support.
