@@ -6,13 +6,13 @@ Starter project for React application using webpack 4
 
 ## Contents
 
-1. Babel - ES6 to ES5 transpiling and JSX support.
-2. React & React DOM
-3. Webpack 4 & Webpack Dev Server for easy development
-4. Node Sass for SCSS support with pre configured CSS modules support
-5. PropTypes library for React components prop types validation
-6. Redux & React Redux for state management
-7. Redux thunk middleware for better actions handling
+1. (Babel)[https://babeljs.io/] - ES6 to ES5 transpiling and JSX support.
+2. (React)[https://reactjs.org/] & React DOM
+3. (Webpack)[https://webpack.js.org/] 4 & (Webpack Dev Server)[https://github.com/webpack/webpack-dev-server] for easy development
+4. (Node Sass)[https://github.com/sass/node-sass] for SCSS support with pre configured CSS modules support
+5. (PropTypes)[https://github.com/facebook/prop-types] library for React components prop types validation
+6. (Redux)[https://redux.js.org/] & (React Redux)[https://github.com/reactjs/react-redux] for state management
+7. Redux (thunk)[https://github.com/gaearon/redux-thunk] middleware for better actions handling
 8. Predefined aliases:
    There are 5 predefined aliases in `webpack.config.js` for shorter import statements:
    
@@ -26,8 +26,8 @@ Starter project for React application using webpack 4
    
    `Utilities` - Alias for `/src/Utilities`
    
-9. Url Loader - image files (`jp(e)g, png, gif, svg`) will be Base64 encoded and inlined if their size is up to 16KB by default. You can change the limit in `webpack.config.js` or remove it.
-10. Jest - includes Jest & Enzyme testing environment and tools. Some basic mocks for files and style imports are already predefined, and a basic test template and example test file is provided.
+9. (Url Loader)[https://github.com/webpack-contrib/url-loader] - image files (`jp(e)g, png, gif, svg`) will be Base64 encoded and inlined if their size is up to 16KB by default. You can change the limit in `webpack.config.js` or remove it.
+10. Jest - includes (Jest)[https://facebook.github.io/jest/] & (Enzyme)[http://airbnb.io/enzyme/] testing environment and tools. Some basic mocks for files and style imports are already predefined, and a basic test template and example test file is provided.
    
 ## Usage
 
@@ -90,9 +90,11 @@ To use the basic test, import the `test-template` from the `__tests__` folder. I
 2. mountBasicTest
 
   This function takes an object in the form of `{ Component, props }`. It will execute the basic tests and return the mounted component so you may add more tests on it.
+  
 3. shallow
 
   This is the `shallow` render function from Enzyme
+  
 4. mount 
 
   This is the `mount` function from Enzyme
