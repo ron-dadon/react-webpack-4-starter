@@ -1,12 +1,14 @@
 {
-  "name": "amzaio-react",
+  "name": "react-webpack-4-starter",
+  "author": "Ron Dadon, https://github.com/ron-dadon",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "test": "env NODE_ENV=test ./node_modules/jest/bin/jest.js --config ./jest.config.js"
+    "test": "env NODE_ENV=test ./node_modules/jest/bin/jest.js --config ./jest.config.js",
+    "test:coverage": "env NODE_ENV=test ./node_modules/jest/bin/jest.js --config ./jest.config.js --coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -9,6 +9,22 @@ const htmlPlugin = new HtmlWebpackPlugin({
 
 const KiloByte = (kb) => kb * 1024
 
+const cssLoaders = [
+  {
+    loader: 'style-loader'
+  },
+  {
+    loader: 'css-loader',
+    options: {
+      modules: true,
+      importLoaders: 1,
+      localIdentName: '[name]_[local]_[hash:base64]',
+      sourceMap: true,
+      minimize: true
+    }
+  }
+]
+
 module.exports = {
   module: {
     rules: [
@@ -20,25 +36,14 @@ module.exports = {
         }
       },
       {
-        test: /\.s?css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[name]_[local]_[hash:base64]',
-              sourceMap: true,
-              minimize: true
-            }
-          },
-          {
-            loader: 'sass-loader'
-          }
-        ]
+        test: /\.css$/,
+        use: cssLoaders
+      },
+      {
+        test: /\.scss$/,
+        use: cssLoaders.concat([{
+          loader: 'sass-loader'
+        }])
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
@@ -55,7 +60,8 @@ module.exports = {
       Containers: path.resolve(__dirname, 'src/Containers'),
       Actions: path.resolve(__dirname, 'src/Redux/Actions'),
       Reducers: path.resolve(__dirname, 'src/Redux/Reducers'),
-      Utilities: path.resolve(__dirname, 'src/Utilities')
+      Utilities: path.resolve(__dirname, 'src/Utilities'),
+      testUtils: path.resolve(__dirname, '__tests__/testUtils'),
     }
   },
   devServer: {

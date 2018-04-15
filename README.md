@@ -27,6 +27,7 @@ Starter project for React application using webpack 4
    `Utilities` - Alias for `/src/Utilities`
    
 9. Url Loader - image files (`jp(e)g, png, gif, svg`) will be Base64 encoded and inlined if their size is up to 16KB by default. You can change the limit in `webpack.config.js` or remove it.
+10. Jest - includes Jest & Enzyme testing environment and tools. Some basic mocks for files and style imports are already predefined, and a basic test template and example test file is provided.
    
 ## Usage
 
@@ -39,10 +40,11 @@ $ yarn
 
 Wait for the modules installation to complete.
 
-You have 2 predefined scripts:
+You have 3 predefined scripts:
 
 1. Start - spin up the webpack dev server (default port `8080`, can be changed in `webpack.config.js` under `devServer`)
 2. Build - create a production build in the `dist` folder
+3. Test - execute test files in `__tests__` folder
 
 To run the scripts use:
 
@@ -55,3 +57,42 @@ Or
 ```bash
 $ yarn build
 ```
+
+Or
+
+```bash
+$ yarn test
+```
+
+## Testing
+
+The starter project includes Jest testing library with Enzyme.
+The tests are stored in the `__tests__` folder, under the same structure of the src folder.
+Mock-ups are stored in the `__mock__` folder, and includes basic mock-up files for external files loaders and style loaders.
+
+There is a basic test template that will execute the following tests on a component:
+1. Check that the component is rendered
+2. Check that the rendered component has the correct structure
+3. Check that the component holds the right props
+
+To use the basic test, import the `test-template` from the `__tests__` folder. It exports the following:
+1. shallowBasicTest
+
+  This function takes an object in the form of `{ Component, props }`. It will execute the basic tests and return the shallow rendered component so you may add more tests on it.
+  
+2. mountBasicTest
+
+  This function takes an object in the form of `{ Component, props }`. It will execute the basic tests and return the mounted component so you may add more tests on it.
+3. shallow
+
+  This is the `shallow` render function from Enzyme
+4. mount 
+
+  This is the `mount` function from Enzyme
+
+You may refer to the `Home.spec.js` file for an example on how to use the `test-template`.
+
+### Test coverage
+
+You can run the tests with coverage using the predefined script `test:coverage`.
+It will execute the `jest` testing library with the `--coverage` flag. The coverage results are stored in `__coverage__` folder.
