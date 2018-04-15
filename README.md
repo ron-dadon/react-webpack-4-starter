@@ -40,11 +40,12 @@ $ yarn
 
 Wait for the modules installation to complete.
 
-You have 3 predefined scripts:
+You have 4 predefined scripts:
 
 1. Start - spin up the webpack dev server (default port `8080`, can be changed in `webpack.config.js` under `devServer`)
 2. Build - create a production build in the `dist` folder
 3. Test - execute test files in `__tests__` folder
+4. Test Coverage - execute test files in `__tests__` folder and collect coverage into the `__coverage__` folder
 
 To run the scripts use:
 
@@ -62,6 +63,12 @@ Or
 
 ```bash
 $ yarn test
+```
+
+Or
+
+```bash
+$ yarn test:coverage
 ```
 
 ## Testing
