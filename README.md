@@ -1,6 +1,6 @@
 # react-webpack-4-starter
 
-<img src="https://cdn-images-1.medium.com/max/1468/1*kt9otqHk14BZIMNruiG0BA.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/1*Wx82vEGrMfW4AdSLodZXgQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/2000/1*XmHUL5DeySv_dGmvbPqdDQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png" height="64">
+<img src="https://cdn-images-1.medium.com/max/1468/1*kt9otqHk14BZIMNruiG0BA.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/1*Wx82vEGrMfW4AdSLodZXgQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/2000/1*XmHUL5DeySv_dGmvbPqdDQ.png" height="64"> <img src="https://cdn-images-1.medium.com/max/1200/0*U2DmhXYumRyXH6X1.png" height="64"> <img src="https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png" height="64">
 
 Starter project for React application using webpack 4
 
